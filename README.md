@@ -2,7 +2,10 @@
 **Добавление элементов в activity_main.xml**
 ===========
 - [X] Вставить EditText тип textMultiLine
+- [X] Добавить поле TextView
 - [X] Добавить кнопки для получить данные и сохранить данные
+- **Добавление кода**
+===========
 - [X] Добавить обработчики кнопок
 ```
         <Button
@@ -23,7 +26,6 @@
             android:onClick="Save"
             android:text="Save"/>
 ```
-- [X] Добавить поле TextView
 - [X] Добавить функции onSaveInstanceState(Bundle outState) и onSaveInstanceState(Bundle outState).
 ```
         @Override
