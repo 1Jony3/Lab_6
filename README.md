@@ -41,4 +41,4 @@
         super.onSaveInstanceState(outState);
     }
 ``` 
-*** Все работает ***
+***Все работает***
