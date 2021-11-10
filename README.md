@@ -42,3 +42,5 @@
     }
 ``` 
 ***Все работает***
+
+[Информация по офрмлению README.md](https://github.com/GnuriaN/format-README.git)
