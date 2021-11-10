@@ -5,7 +5,7 @@
 - [X] Добавить кнопки для получить данные и сохранить данные
 - [X] Добавить обработчики кнопок
 ```
-   <Button
+        <Button
             android:id="@+id/get"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,3 +23,22 @@
             android:onClick="Save"
             android:text="Save"/>
 ```
+- [X] Добавить поле TextView
+- [X] Добавить функции onSaveInstanceState(Bundle outState) и onSaveInstanceState(Bundle outState).
+```
+        @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle outState)
+    {
+        outState.putString(nameVariableKey, name);
+        TextView nameView = (TextView) findViewById(R.id.save);
+        outState.putString(textViewTexKey, nameView.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+``` 
+*** Все работает ***
